@@ -48,7 +48,7 @@ class ImportController extends Controller
 	 * @param int $albumID
 	 * @return boolean Returns true when photo import was successful.
 	 */
-	private function photo($path, $albumID = 0)
+	public function photo($path, $albumID = 0)
 	{
 		// No need to validate photo type and extension in this function.
 		// $photo->add will take care of it.
